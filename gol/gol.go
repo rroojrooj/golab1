@@ -10,6 +10,8 @@ func calculateNextState(p golParams, world [][]byte) [][]byte {
 	}
 
 	// Copy the state from the old world
+	// Need to do new state (create newWorld) since mutating along the way on the original one will change the state that will use to cal on the next iteration.
+	// So that will make it wrong
 	for y := 0; y < IMHT; y++ {
 		for x := 0; x < IMWD; x++ {
 			newWorld[y][x] = world[y][x]
