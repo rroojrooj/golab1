@@ -23,6 +23,7 @@ func calculateNextState(p golParams, world [][]byte) [][]byte {
 
 			// Compute the sum of the eight neighbors using explicit modular arithmetic
 			sumNeighbors :=
+				// In case in the future, we can change modular to if statements cos modular is more expensive. (for more points)
 				(world[(y+IMHT-1)%IMHT][(x+IMWD-1)%IMWD] / 255) + // NW: Northwest neighbor
 					(world[(y+IMHT-1)%IMHT][(x+IMWD)%IMWD] / 255) + // N: North neighbor
 					(world[(y+IMHT-1)%IMHT][(x+IMWD+1)%IMWD] / 255) + // NE: Northeast neighbor
