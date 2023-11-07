@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../gol-skeleton/.idea/gol-skeleton.iml" filepath="$PROJECT_DIR$/../gol-skeleton/.idea/gol-skeleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/golab1.iml" filepath="$PROJECT_DIR$/.idea/golab1.iml" />
     </modules>
   </component>
